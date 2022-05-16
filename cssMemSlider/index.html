@@ -3,14 +3,63 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="icon" href="assets/icons/favicon.png" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>cssMemSlider</title>
+  <title>CSS Mem carousel</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <div class="carousel">
+    <input type="radio" name="carousel" id="slide1" checked>
+    <input type="radio" name="carousel" id="slide2">
+    <input type="radio" name="carousel" id="slide3">
+    <input type="radio" name="carousel" id="slide4">
+    <div class="carousel__slides">
+      <div id="slides__overflow">
+        <div class="inner">
+          <div class="slide slide__1">
+            <div class="slide__content">
+              <h2>Slide 1</h2>
+            </div>
+          </div>
+          <div class="slide slide__2">
+            <div class="slide__content">
+              <h2>Slide 2</h2>
+            </div>
+          </div>
+          <div class="slide slide__3">
+            <div class="slide__content">
+              <h2>Slide 3</h2>
+            </div>
+          </div>
+          <div class="slide slide__4">
+            <div class="slide__content">
+              <h2>Slide 4</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel__nav">
+      <div class="nav-slides__overflow">
+        <div class="nav-inner">
+          <p class="slide-description">Content for Slide 1</p>
+          <p class="slide-description">Content for Slide 2</p>
+          <p class="slide-description">Content for Slide 3</p>
+          <p class="slide-description">Content for Slide 4</p>
+        </div>
+      </div>
+      <div id="bullets">
+        <label for="slide1"><span class="bullet__label bullet__label-1"></span></label>
+        <label for="slide2"><span class="bullet__label bullet__label-2"></span></label>
+        <label for="slide3"><span class="bullet__label bullet__label-3"></span></label>
+        <label for="slide4"><span class="bullet__label bullet__label-4"></span></label>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
