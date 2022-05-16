@@ -130,6 +130,8 @@ body {
   width: 100%;
   font-size: 1.25rem;
   margin: 0;
+  text-align: start;
+  padding-left: 0.5rem;
 }
 
 .carousel .carousel__nav #bullets {
@@ -176,6 +178,14 @@ body {
   margin-left: -300%;
 }
 
+#slide1:not(#slide1:checked) ~ .carousel__nav #bullets label:active .bullet__label-1,
+#slide1:not(#slide2:checked) ~ .carousel__nav #bullets label:active .bullet__label-2,
+#slide1:not(#slide3:checked) ~ .carousel__nav #bullets label:active .bullet__label-3,
+#slide1:not(#slide4:checked) ~ .carousel__nav #bullets label:active .bullet__label-4 {
+  border-color: #3c3c3c;
+  background: #3c3c3c;
+}
+
 #slide1:checked ~ .carousel__nav #bullets .bullet__label-1,
 #slide2:checked ~ .carousel__nav #bullets .bullet__label-2,
 #slide3:checked ~ .carousel__nav #bullets .bullet__label-3,
@@ -190,7 +200,7 @@ body {
   }
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 426px) {
   .carousel__nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
